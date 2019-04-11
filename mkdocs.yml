@@ -1,0 +1,13 @@
+site_name: Theming codekit
+
+repo_url: https://github.com/David-Corbett/theming-codekit
+site_description: 'Theming codekit - A toolkit for theming web content, built with NPM scripts'
+theme: readthedocs
+
+markdown_extensions:
+  - toc:
+      permalink: True
+
+pages:
+  - Home: 'index.md'
+  - SCSS: 'scss.md'
