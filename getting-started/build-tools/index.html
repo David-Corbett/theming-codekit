@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Build tools - Theming codekit</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Build tools";
+    var mkdocs_page_input_path = "getting-started/build-tools.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Theming codekit</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Build tools</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#build-tools">Build Tools</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#installation">Installation</a></li>
+        
+            <li><a class="toctree-l3" href="#tooling-setup">Tooling setup</a></li>
+        
+            <li><a class="toctree-l3" href="#troubleshooting">Troubleshooting</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">SCSS</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../scss/scss-introduction/">scss introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../scss/layout/">layout</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Documenting code</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../.."></a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Theming codekit</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Build tools</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/David-Corbett/theming-codekit/edit/master/docs/getting-started/build-tools.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="build-tools">Build Tools<a class="headerlink" href="#build-tools" title="Permanent link">&para;</a></h1>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<p>The codekit uses <a href="https://docs.npmjs.com/misc/scripts">NPM scripts</a> and packages to create tooling that a developer would ideally like to have for theming web content. Therefore to get started, the developer must have NPM installed on their machine. To see if you already have Node.js and npm installed, check the installed version, run the following commands in a terminal window:</p>
+<pre><code class="console">node -v
+npm -v
+</code></pre>
+
+<p>Both commands should return a version number similar to <code>v10.x.x</code> or <code>6.x.x</code> (where x is a valid integer). More information on installing NPM on various platforms and devices is available on the <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm">NPM website</a>.</p>
+<p>When you are sure that Node.js and npm are installed on the machine, open a terminal and navigate to the root directory of the project where the <code>package.json</code> file is located and run <code>npm install</code>to install our local dependencies listed in <a href="/package.json">package.json</a>. </p>
+<h2 id="tooling-setup">Tooling setup<a class="headerlink" href="#tooling-setup" title="Permanent link">&para;</a></h2>
+<p>With the codekit using <a href="https://docs.npmjs.com/misc/scripts">NPM scripts</a> for its build system, the <code>package.json</code> includes convenient methods for working with the framework, including compiling code, running tests, and more.</p>
+<h3 id="using-npm-scripts">Using NPM scripts<a class="headerlink" href="#using-npm-scripts" title="Permanent link">&para;</a></h3>
+<p>The <code>package.json</code> includes the following commands and tasks:</p>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>npm run build</code></td>
+<td><code>npm run build</code> compiles files into their build directories ready for use in a production environment. <strong>Uses <a href="https://sass-lang.com/">Sass</a>, <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>, and <a href="https://github.com/mishoo/UglifyJS2">UglifyJS</a>.</strong></td>
+</tr>
+<tr>
+<td><code>npm run watch</code></td>
+<td>Watches for changes to scss and js files &amp; compiles them for development purposes.</td>
+</tr>
+</tbody>
+</table>
+<p>Run <code>npm run</code> to see all the npm scripts.</p>
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
+<p>Should you encounter problems with installing dependencies, uninstall all previous dependency versions (global and local). Then, rerun <code>npm install</code>.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../scss/scss-introduction/" class="btn btn-neutral float-right" title="scss introduction">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../.." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/David-Corbett/theming-codekit/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../.." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../scss/scss-introduction/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

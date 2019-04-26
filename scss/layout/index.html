@@ -5,25 +5,25 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Theming codekit - A toolkit for theming web content, built with NPM scripts">
   
-  <link rel="shortcut icon" href="img/favicon.ico">
-  <title>Home - Theming codekit</title>
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>layout - Theming codekit</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Home";
-    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_name = "layout";
+    var mkdocs_page_input_path = "scss/layout.md";
     var mkdocs_page_url = null;
   </script>
   
-  <script src="js/jquery-2.1.1.min.js" defer></script>
-  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
@@ -36,9 +36,9 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Theming codekit</a>
+        <a href="../.." class="icon icon-home"> Theming codekit</a>
         <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
@@ -48,20 +48,14 @@
 	<ul class="current">
 	  
           
-            <li class="toctree-l1 current">
+            <li class="toctree-l1">
 		
-    <a class="current" href=".">Home</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l2"><a href="#theming-codekit">Theming codekit</a></li>
-    
-
-    </ul>
+    <a class="" href="../..">Home</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="getting-started/build-tools/">Build tools</a>
+    <a class="" href="../../getting-started/build-tools/">Build tools</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -70,11 +64,17 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="scss/scss-introduction/">scss introduction</a>
+    <a class="" href="../scss-introduction/">scss introduction</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="scss/layout/">layout</a>
+    <a class="current" href="./">layout</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#layout">Layout</a></li>
+    
+
+    </ul>
                 </li>
     </ul>
 	    </li>
@@ -85,7 +85,7 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="."></a>
+    <a class="" href="../.."></a>
                 </li>
     </ul>
 	    </li>
@@ -100,7 +100,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Theming codekit</a>
+        <a href="../..">Theming codekit</a>
       </nav>
 
       
@@ -108,14 +108,18 @@
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".">Docs</a> &raquo;</li>
+    <li><a href="../..">Docs</a> &raquo;</li>
     
       
+        
+          <li>SCSS &raquo;</li>
+        
+      
     
-    <li>Home</li>
+    <li>layout</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/David-Corbett/theming-codekit/edit/master/docs/index.md"
+        <a href="https://github.com/David-Corbett/theming-codekit/edit/master/docs/scss/layout.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -125,18 +129,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="theming-codekit">Theming codekit<a class="headerlink" href="#theming-codekit" title="Permanent link">&para;</a></h1>
-<p>This repository provides a series of tools and build scripts useful for developing resources that would be used to theme web content:</p>
-<ul>
-<li>write and compile scss to css</li>
-<li>apply appropriate prefixing for css rules</li>
-<li>write and uglify js</li>
-<li>detect features the user’s browser has to offer (via Modernizr)</li>
-<li>code linting</li>
-<li>optimise and compress images for the web</li>
-<li>living style guide for the code via kss</li>
-</ul>
-<p>The kit uses <a href="https://docs.npmjs.com/misc/scripts">NPM scripts</a> and packages to create tooling to perform all of the above. Comprehensive documentation is provided herein on how to use the toolkit and how to configure additional applications should they be needed. The documentation is also online at <a href="https://david-corbett.github.io/theming-codekit/">https://david-corbett.github.io/theming-codekit/</a>. </p>
+                <h1 id="layout">Layout<a class="headerlink" href="#layout" title="Permanent link">&para;</a></h1>
               
             </div>
           </div>
@@ -144,8 +137,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="getting-started/build-tools/" class="btn btn-neutral float-right" title="Build tools">Next <span class="icon icon-circle-arrow-right"></span></a>
       
+        <a href="../scss-introduction/" class="btn btn-neutral" title="scss introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -173,19 +166,14 @@
           <a href="https://github.com/David-Corbett/theming-codekit/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
+        <span><a href="../scss-introduction/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-        <span style="margin-left: 15px"><a href="getting-started/build-tools/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
-    <script>var base_url = '.';</script>
-    <script src="js/theme.js" defer></script>
-      <script src="search/main.js" defer></script>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
 
 </body>
 </html>
-
-<!--
-MkDocs version : 1.0.4
-Build Date UTC : 2019-04-26 13:51:23
--->
