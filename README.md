@@ -57,7 +57,8 @@ Run `npm run` to see all the npm scripts.
 
 ## Documentation
 
-TODO: add about how this documented 
+TODO: add about how this documented
+Documentation for how to use the tools and scripts provided in this repo are available at <https://david-corbett.github.io/theming-codekit/>.
 
 ### Running documentation locally
 
