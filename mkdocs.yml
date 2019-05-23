@@ -2,12 +2,35 @@ site_name: Theming codekit
 
 repo_url: https://github.com/David-Corbett/theming-codekit
 site_description: 'Theming codekit - A toolkit for theming web content, built with NPM scripts'
-theme: readthedocs
+theme:
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'blue'
+    accent: 'blue'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  logo:
+    icon: 'code'
 
+# Extensions
 markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
   - toc:
-      permalink: True
+      permalink: true
 
 pages:
   - Home: 'index.md'
-  - SCSS: 'scss.md'
+  - Build tools: 'getting-started/build-tools.md'
+  - Css / scss:
+      - 'scss introduction': 'scss/scss-introduction.md'
+      - 'layout': 'scss/layout.md'
+  - JS:
+      - 'modernizr': 'js/modernizr.md'
+  - Image tools:
+      - 'Optimising gifs,jpgs, pngs': 'images-tools/image-opt.md'
+  - Linting: 'linting/linting.md'
+  - Documentation: 'documentation/documentation.md'
